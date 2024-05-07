@@ -33,6 +33,8 @@
 		B770537F2BA302660048B064 /* PatientListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B770537E2BA302660048B064 /* PatientListModel.swift */; };
 		B7834A9B2BB1894500CBC6E5 /* loginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7834A9A2BB1894500CBC6E5 /* loginModel.swift */; };
 		B784502E2BAD7C2400CDAEA6 /* AppointmentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B784502D2BAD7C2400CDAEA6 /* AppointmentsModel.swift */; };
+		B789029C2BEA35FF00674281 /* statusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789029B2BEA35FF00674281 /* statusModel.swift */; };
+		B789029E2BEA36E800674281 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789029D2BEA36E800674281 /* StatusViewController.swift */; };
 		B795A3652B9EDCB200981A63 /* dloginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B795A3642B9EDCB200981A63 /* dloginVC.swift */; };
 		B795A3672B9EEF2800981A63 /* DoctorProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B795A3662B9EEF2800981A63 /* DoctorProfileVC.swift */; };
 		B795A3692B9EEF9400981A63 /* DoctorDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B795A3682B9EEF9400981A63 /* DoctorDashboardVC.swift */; };
@@ -96,6 +98,8 @@
 		B770537E2BA302660048B064 /* PatientListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientListModel.swift; sourceTree = "<group>"; };
 		B7834A9A2BB1894500CBC6E5 /* loginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginModel.swift; sourceTree = "<group>"; };
 		B784502D2BAD7C2400CDAEA6 /* AppointmentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsModel.swift; sourceTree = "<group>"; };
+		B789029B2BEA35FF00674281 /* statusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statusModel.swift; sourceTree = "<group>"; };
+		B789029D2BEA36E800674281 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		B795A3642B9EDCB200981A63 /* dloginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dloginVC.swift; sourceTree = "<group>"; };
 		B795A3662B9EEF2800981A63 /* DoctorProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorProfileVC.swift; sourceTree = "<group>"; };
 		B795A3682B9EEF9400981A63 /* DoctorDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDashboardVC.swift; sourceTree = "<group>"; };
@@ -196,6 +200,7 @@
 				B76AC4A02BA9892900256594 /* ViewReportsModel.swift */,
 				B76AC49E2BA9804400256594 /* DischargeFormModel.swift */,
 				B7AD14B12BA94EBD00C13653 /* DoctorDetailsModel.swift */,
+				B789029B2BEA35FF00674281 /* statusModel.swift */,
 			);
 			name = Model;
 			path = Model/Model;
@@ -251,6 +256,7 @@
 				B795A3862B9EF42000981A63 /* MyProfileVC.swift */,
 				B795A3882B9EF80600981A63 /* ReportsVC.swift */,
 				B795A38A2B9EF83000981A63 /* DischargeFormVC.swift */,
+				B789029D2BEA36E800674281 /* StatusViewController.swift */,
 			);
 			path = Patient;
 			sourceTree = "<group>";
@@ -384,6 +390,7 @@
 				B7D281FF2BB289740039DC6B /* AddPatientModel.swift in Sources */,
 				B76AC49F2BA9804400256594 /* DischargeFormModel.swift in Sources */,
 				B7834A9B2BB1894500CBC6E5 /* loginModel.swift in Sources */,
+				B789029C2BEA35FF00674281 /* statusModel.swift in Sources */,
 				3181E2E32B8EDE6A00F7E7E3 /* SceneDelegate.swift in Sources */,
 				B718B1B62BB3D3140015AECA /* SymtomsTableViewCell.swift in Sources */,
 				B795A3792B9EF24200981A63 /* ViewReportsVC.swift in Sources */,
@@ -391,6 +398,7 @@
 				B795A3672B9EEF2800981A63 /* DoctorProfileVC.swift in Sources */,
 				B75440F42BAE90580026AB47 /* ReportsUplodeModel.swift in Sources */,
 				B7ACCB252BA1543300B6ADA8 /* NotificationsTableViewCell.swift in Sources */,
+				B789029E2BEA36E800674281 /* StatusViewController.swift in Sources */,
 				B7A120492BBAA3C300E4929D /* DischargeFormUploadModel.swift in Sources */,
 				B7AD14B22BA94EBD00C13653 /* DoctorDetailsModel.swift in Sources */,
 				B77053792BA2FFF80048B064 /* BasicViewController.swift in Sources */,

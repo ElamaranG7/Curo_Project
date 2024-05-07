@@ -15,6 +15,9 @@ class UploadReportsVC: BasicViewController, PHPickerViewControllerDelegate {
      
         SelectButton.addTarget(self, action: #selector(selectButtonTapped), for: .touchUpInside)
     }
+    @IBAction func backButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
     @IBAction func saveButton(_ sender: UIButton) {
         guard !selectedImages.isEmpty else {

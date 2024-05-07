@@ -27,8 +27,7 @@ class ViewDischargeFormVC: BasicViewController {
     }
     
     @IBAction func editButton(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PatientDetailsVC") as! PatientDetailsVC
-        self.navigationController?.pushViewController(vc, animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
 }
 
