@@ -18,7 +18,7 @@ class ViewDischargeFormVC: BasicViewController {
     
     @IBOutlet weak var dischargeFormImageView: UIImageView!
     
-    var patientId = "132"
+    var patientId = ""
     var dischargeFormModel: DischargeFormModel?
     
     override func viewDidLoad() {
@@ -39,19 +39,20 @@ extension ViewDischargeFormVC {
             switch result {
             case .success(let data):
                 DispatchQueue.main.async { [self] in
-                    for path in data.profilePicPath {
-                        if let imageURL = URL(string: ApiList.baseUrl + path) {
-                            self.loadImage(from: imageURL) { image in
-                                // Assuming you want to display all images in the image view
-                                // You might need to modify this logic based on your requirements
-                                DispatchQueue.main.async {
-                                    if let image = image {
-                                        // Append each image to a collection or display the last one
-                                        self.dischargeFormImageView.image = image
+                    if data.status == "success"{
+                        for path in data.profilePicPath {
+                            if let imageURL = URL(string: ApiList.baseUrl + path) {
+                                self.loadImage(from: imageURL) { image in
+                                    DispatchQueue.main.async {
+                                        if let image = image {
+                                            self.dischargeFormImageView.image = image
+                                        }
                                     }
                                 }
                             }
                         }
+                    }else {
+                        showToast(data.message)
                     }
                     self.stopIndicator()
                 }
