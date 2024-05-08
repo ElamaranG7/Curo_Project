@@ -23,7 +23,7 @@ struct ApiList {
         static let ApprovedAppoinmentsURL = baseUrl+"apoapproved.php?"
         static let RejectedAppoinmentsURL = baseUrl+"rejected_appoinments.php"
         static let UploadingReportsURL = baseUrl+"upload.php"
-        static let UploadingDischareFromURL = baseUrl+"image.php"
+        static let UploadingDischareFromURL = baseUrl+"discharge.php"
         static let UpdateAppointmentURL = baseUrl+"updated_appoinments.php"
         static let symptomsURL = baseUrl+"symptoms.php"
         static let appoinmentsBookingURL = baseUrl+"appoinments_bokking.php"

@@ -22,6 +22,12 @@ class AppoinmentsVC: BasicViewController {
     @IBAction func backButton(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
+    @IBAction func statusButton(_ sender: Any) {
+      
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "StatusViewController") as! StatusViewController
+      //  vc.patientId = patientId
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
     @IBAction func sendDataToAPI(_ sender: Any) {
         let selectedDate = calendarDatePicker.date
@@ -57,4 +63,3 @@ class AppoinmentsVC: BasicViewController {
 
 
 }
- 

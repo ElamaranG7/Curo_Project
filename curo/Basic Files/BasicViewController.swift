@@ -57,7 +57,7 @@ class BasicViewController: UIViewController {
 
     func showToast(_ text: String, delay: TimeInterval = DELAY_LONG) {
         let label = ToastLabel()
-        label.backgroundColor = UIColor(white: 0, alpha: 1)
+        label.backgroundColor = UIColor(named: "AppColor")
         label.textColor = .white
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: UIFont.labelFontSize)

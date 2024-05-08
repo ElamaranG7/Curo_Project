@@ -6,13 +6,13 @@
 //
 
 import Foundation
-
 struct DischargeFormUploadModel: Codable {
-    let success: Bool
-    let profilePicPath: String
+    let status, message: String
+    let profilePicPath: [String]
 
     enum CodingKeys: String, CodingKey {
-        case success
+        case status, message
         case profilePicPath = "profile_pic_path"
     }
 }
+

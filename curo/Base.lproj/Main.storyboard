@@ -1073,6 +1073,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="chevron.backward.square.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="backButton:" destination="KWt-c6-OFI" eventType="touchUpInside" id="0SS-R3-PpD"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Reports" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97L-63-5Gp">
                                         <rect key="frame" x="103.5" y="17.5" width="207" height="24"/>
@@ -1359,11 +1362,11 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Z0f-QU-xNo">
-                                <rect key="frame" x="211.5" y="119.5" width="207.5" height="107.5"/>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z0f-QU-xNo">
+                                <rect key="frame" x="211.5" y="119.5" width="207.5" height="143.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZ5-jV-Nvc">
-                                        <rect key="frame" x="0.0" y="0.0" width="207.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="207.5" height="67"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="  View Reports">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1379,7 +1382,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHq-1g-3gL">
-                                        <rect key="frame" x="0.0" y="58" width="207.5" height="49.5"/>
+                                        <rect key="frame" x="0.0" y="77" width="207.5" height="66.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="  View Discharge Form">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1410,7 +1413,7 @@
                         <viewLayoutGuide key="safeArea" id="6Sv-8E-Tff"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Z0f-QU-xNo" firstAttribute="height" secondItem="lVz-SS-ij2" secondAttribute="height" multiplier="0.12" id="2ir-8Z-4jA"/>
+                            <constraint firstItem="Z0f-QU-xNo" firstAttribute="height" secondItem="lVz-SS-ij2" secondAttribute="height" multiplier="0.16" id="2ir-8Z-4jA"/>
                             <constraint firstItem="HCe-rd-wwb" firstAttribute="leading" secondItem="6Sv-8E-Tff" secondAttribute="leading" constant="20" id="3Kg-jS-V1I"/>
                             <constraint firstItem="6Sv-8E-Tff" firstAttribute="bottom" secondItem="tn8-Tu-mJB" secondAttribute="bottom" constant="20" id="6gZ-0K-kpe"/>
                             <constraint firstItem="jA6-tU-gcU" firstAttribute="top" secondItem="PKn-Qh-n5L" secondAttribute="bottom" constant="20" id="Epu-Hf-d9W"/>
@@ -1462,6 +1465,9 @@
                                 <color key="tintColor" red="0.1215686275" green="0.1215686275" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="RMt-tE-RJA" eventType="touchUpInside" id="Vwq-gz-RoS"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h1" translatesAutoresizingMaskIntoConstraints="NO" id="rIn-n0-5go">
                                 <rect key="frame" x="77.5" y="239" width="259" height="341"/>
@@ -1476,7 +1482,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="chevron.backward.square.fill" catalog="system"/>
                                         <connections>
-                                            <action selector="editButton:" destination="RMt-tE-RJA" eventType="touchUpInside" id="rwj-Bq-2Ug"/>
+                                            <action selector="backButton:" destination="RMt-tE-RJA" eventType="touchUpInside" id="q7Y-wV-eq7"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Discharge Form" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWN-Q9-uWx">
@@ -1883,6 +1889,9 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="statusButton:" destination="Sqt-CI-WaE" eventType="touchUpInside" id="ReD-Vm-SKu"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1FX-eh-U50">
                                 <rect key="frame" x="0.0" y="48" width="414" height="71.5"/>
@@ -2321,7 +2330,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="sunny day" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bMY-LE-c79">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bMY-LE-c79">
                                                         <rect key="frame" x="186.5" y="0.0" width="186.5" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -2337,7 +2346,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Male" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RGK-Ih-ZFI">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RGK-Ih-ZFI">
                                                         <rect key="frame" x="186.5" y="0.0" width="186.5" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -2353,7 +2362,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="34" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="20c-4l-t92">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="20c-4l-t92">
                                                         <rect key="frame" x="186.5" y="0.0" width="186.5" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -2369,7 +2378,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="9856322244" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h9I-PR-8tI">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h9I-PR-8tI">
                                                         <rect key="frame" x="186.5" y="0.0" width="186.5" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -2385,7 +2394,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ksdjlfk@gmail.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5PV-L0-gzL">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5PV-L0-gzL">
                                                         <rect key="frame" x="186.5" y="0.0" width="186.5" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -2401,7 +2410,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="dfdfdf" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VbL-jw-3yR">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VbL-jw-3yR">
                                                         <rect key="frame" x="186.5" y="0.0" width="186.5" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -2692,10 +2701,10 @@
                                 </connections>
                             </button>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rTz-Us-4UE">
-                                <rect key="frame" x="230" y="119.5" width="189" height="68"/>
+                                <rect key="frame" x="212" y="119.5" width="207" height="143.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPr-xS-NJ9">
-                                        <rect key="frame" x="0.0" y="0.0" width="189" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="68"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="  Upload Reports">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2710,7 +2719,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89Z-I7-QP1">
-                                        <rect key="frame" x="0.0" y="38" width="189" height="30"/>
+                                        <rect key="frame" x="0.0" y="76" width="207" height="67.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="  Upload Discharge Form">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2746,13 +2755,14 @@
                             <constraint firstItem="rTz-Us-4UE" firstAttribute="top" secondItem="Bkt-vS-hXT" secondAttribute="bottom" id="AGt-Jq-fOB"/>
                             <constraint firstItem="Bkt-vS-hXT" firstAttribute="centerX" secondItem="7Rx-b0-2eg" secondAttribute="centerX" id="BRM-zm-2uy"/>
                             <constraint firstItem="Bkt-vS-hXT" firstAttribute="width" secondItem="uGA-V0-97S" secondAttribute="width" id="BUS-FF-Uxz"/>
+                            <constraint firstItem="rTz-Us-4UE" firstAttribute="height" secondItem="uGA-V0-97S" secondAttribute="height" multiplier="0.16" id="Bdc-Rp-Q3w"/>
                             <constraint firstItem="Bkt-vS-hXT" firstAttribute="top" secondItem="7Rx-b0-2eg" secondAttribute="top" id="F0v-NL-Y1n"/>
                             <constraint firstItem="Qpo-RW-NdU" firstAttribute="top" secondItem="ZFw-c4-PZf" secondAttribute="bottom" constant="20" id="GfI-6m-tOT"/>
+                            <constraint firstItem="rTz-Us-4UE" firstAttribute="width" secondItem="uGA-V0-97S" secondAttribute="width" multiplier="0.5" id="Jsn-jg-x5A"/>
                             <constraint firstItem="ZFw-c4-PZf" firstAttribute="centerX" secondItem="7Rx-b0-2eg" secondAttribute="centerX" id="Pcw-SM-wrW"/>
                             <constraint firstItem="Qpo-RW-NdU" firstAttribute="centerX" secondItem="7Rx-b0-2eg" secondAttribute="centerX" id="Q5X-li-XcZ"/>
                             <constraint firstItem="d4S-2c-3c2" firstAttribute="height" secondItem="uGA-V0-97S" secondAttribute="height" multiplier="0.144531" id="TW5-f0-ajG"/>
                             <constraint firstItem="Bkt-vS-hXT" firstAttribute="height" secondItem="uGA-V0-97S" secondAttribute="height" multiplier="0.08" id="Wxg-S0-U4m"/>
-                            <constraint firstItem="rTz-Us-4UE" firstAttribute="width" secondItem="xgG-vd-ujk" secondAttribute="width" multiplier="4.5" id="c49-6F-Ycq"/>
                             <constraint firstItem="Qpo-RW-NdU" firstAttribute="width" secondItem="uGA-V0-97S" secondAttribute="width" multiplier="0.28744" id="cAS-m9-KZz"/>
                             <constraint firstItem="ZFw-c4-PZf" firstAttribute="top" secondItem="d4S-2c-3c2" secondAttribute="bottom" constant="20" id="fm3-Iy-r7q"/>
                             <constraint firstItem="Qpo-RW-NdU" firstAttribute="height" secondItem="uGA-V0-97S" secondAttribute="height" multiplier="0.06" id="hoJ-XP-ANz"/>
@@ -3247,10 +3257,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="viewFlipsideBackgroundColor">
             <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
